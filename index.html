@@ -1,0 +1,535 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+    <title>Usman Travel</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Additional CSS Files -->
+    <link rel="stylesheet" href="assets/css/fontawesome.css">
+    <link rel="stylesheet" href="assets/css/templatemo-woox-travel.css">
+    <link rel="stylesheet" href="assets/css/owl.css">
+    <link rel="stylesheet" href="assets/css/animate.css">
+    <link rel="stylesheet"href="https://unpkg.com/swiper@7/swiper-bundle.min.css"/>
+    <style>
+      /* Main Navigation */
+.main-nav ul.nav {
+    display: flex;
+    align-items: center;
+    list-style: none;
+    padding: 0;
+}
+.main-nav ul.nav li {
+    position: relative;
+    margin-right: 20px;
+}
+.main-nav ul.nav li a {
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 15px;
+    font-weight: 600;
+}
+
+/* Dropdown Menu */
+.dropdown .dropdown-toggle {
+    color: #fff;
+    cursor: pointer;
+}
+.dropdown-menu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #fff;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.15);
+    width: 250px;
+    z-index: 1000;
+}
+.dropdown:hover .dropdown-menu {
+    display: block;
+}
+.dropdown h6 {
+    font-size: 14px;
+    font-weight: bold;
+    margin: 10px 0 5px;
+    color: #333;
+}
+.dropdown-item {
+    display: block;
+    color: #333;
+    padding: 8px 10px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+.dropdown-item:hover {
+    background-color: #f0f0f0;
+    color: #22b3c1;
+}
+.dropdown-search {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 14px;
+    outline: none;
+}
+
+/* Caret Icon */
+.fa-caret-down {
+    margin-left: 5px;
+}
+
+    </style>
+  </head>
+
+<body>
+
+  <!-- ***** Preloader Start ***** -->
+  <div id="js-preloader" class="js-preloader">
+    <div class="preloader-inner">
+      <span class="dot"></span>
+      <div class="dots">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </div>
+  </div>
+  <!-- ***** Preloader End ***** -->
+
+  <!-- ***** Header Area Start ***** -->
+  <header class="header-area header-sticky">
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <nav class="main-nav">
+                    <!-- ***** Logo Start ***** -->
+                    <a href="index.html" class="logo">
+                        <h1 style="color: white; margin-top: 10px;">UI Travel</h1>
+                    </a>
+                    <!-- ***** Logo End ***** -->
+                    <!-- ***** Menu Start ***** -->
+                    <ul class="nav">
+                        <li><a href="index.html" class="active">Home</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li class="dropdown">
+                          <a href="explore.html" class="dropdown-toggle" id="countryDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                              Travel to
+                          </a>
+                          <div class="dropdown-menu" aria-labelledby="countryDropdown">
+                              <input type="text" placeholder="Search country..." class="dropdown-search">
+                              <h6>Asia</h6>
+                              <a class="dropdown-item" href="pakistan.html" style="color: #22b3c1;">Pakistan</a>
+                              <a class="dropdown-item" href="iran.html" style="color: #22b3c1;">Iran</a>
+                              <a class="dropdown-item" href="bangladesh.html" style="color: #22b3c1;">Bangladesh</a>
+                              <a class="dropdown-item" href="turkey.html" style="color: #22b3c1;">Turkey</a>
+                              
+                              <h6>Europe</h6>
+                              <a class="dropdown-item" href="#" style="color: #22b3c1;">France</a>
+                              <a class="dropdown-item" href="#" style="color: #22b3c1;">Germany</a>
+                              <a class="dropdown-item" href="#" style="color: #22b3c1;">Italy</a>
+                              <a class="dropdown-item" href="#" style="color: #22b3c1;">Spain</a>
+                              
+                              <h6>North America</h6>
+                              <a class="dropdown-item" href="#" style="color: #22b3c1;">United States</a>
+                              <a class="dropdown-item" href="#" style="color: #22b3c1;">Canada</a>
+                              <a class="dropdown-item" href="#" style="color: #22b3c1;">Mexico</a>
+                              
+                              <h6>Africa</h6>
+                              <a class="dropdown-item" href="#" style="color: #22b3c1;">Nigeria</a>
+                              <a class="dropdown-item" href="#" style="color: #22b3c1;">South Africa</a>
+                              <a class="dropdown-item" href="#" style="color: #22b3c1;">Egypt</a>
+                          </div>
+                        </li>
+                        <li><a href="deals.html">Deals</a></li>
+                        <li><a href="reservation.html">Reservation</a></li>
+                        <li><a href="contact.html">Contact Us</a></li>
+                    </ul>   
+                    <a class='menu-trigger'>
+                        <span>Menu</span>
+                    </a>
+                    <!-- ***** Menu End ***** -->
+                </nav>
+            </div>
+        </div>
+    </div>
+  </header>
+  <!-- ***** Header Area End ***** -->
+
+  <!-- ***** Main Banner Area Start ***** -->
+  <section id="section-1">
+    <div class="content-slider">
+      <input type="radio" id="banner1" class="sec-1-input" name="banner" checked>
+      <input type="radio" id="banner2" class="sec-1-input" name="banner">
+      <input type="radio" id="banner3" class="sec-1-input" name="banner">
+      <input type="radio" id="banner4" class="sec-1-input" name="banner">
+      <div class="slider">
+        <div id="top-banner-1" class="banner">
+          <div class="banner-inner-wrapper header-text">
+            <div class="main-caption">
+              <h2 style="color: whitesmoke;">Welcome to</h2>
+              <h1 style="color: whitesmoke;">Usman International Travel</h1>
+              <div class="border-button"><a href="about.html">Make your Reservations</a></div>
+            </div>
+            <div class="container">
+              <div class="row">
+                <div class="col-lg-12">
+                  <div class="more-info">
+                    <div class="row">
+                      <div class="col-lg-3 col-sm-6 col-6">
+                        <i class="fa fa-user"></i>
+                        <h4><span>Population:</span><br>240.5 M</h4>
+                      </div>
+                      <div class="col-lg-3 col-sm-6 col-6">
+                        <i class="fa fa-globe"></i>
+                        <h4><span>Territory:</span><br>881,913 KM<em>2</em></h4>
+                      </div>
+                      <div class="col-lg-3 col-sm-6 col-6">
+                        <i class="fa fa-home"></i>
+                        <h4><span>AVG Price:</span><br>$900.65</h4>
+                      </div>
+                      <div class="col-lg-3 col-sm-6 col-6">
+                        <div class="main-button">
+                          <a href="explore.html">Explore More</a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div id="top-banner-2" class="banner">
+          <div class="banner-inner-wrapper header-text">
+            <div class="main-caption">
+              <h2>Discover Our Story and Passion for Adventure</h2>
+              <h1>About Us</h1>
+              <div class="border-button"><a href="about.html">About Us</a></div>
+            </div>
+            <div class="container">
+              <div class="row">
+                <div class="col-lg-12">
+                  <div class="more-info">
+                    <div class="row">
+                      <div class="col-lg-3 col-sm-6 col-6">
+                        <i class="fa fa-user"></i>
+                        <h4><span>Population:</span><br>85.7 M</h4>
+                      </div>
+                      <div class="col-lg-3 col-sm-6 col-6">
+                        <i class="fa fa-globe"></i>
+                        <h4><span>Territory:</span><br>636,372 KM<em>2</em></h4>
+                      </div>
+                      <div class="col-lg-3 col-sm-6 col-6">
+                        <i class="fa fa-home"></i>
+                        <h4><span>AVG Price:</span><br>$257.96</h4>
+                      </div>
+                      <div class="col-lg-3 col-sm-6 col-6">
+                        <div class="main-button">
+                          <a href="explore.html">Explore More</a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div id="top-banner-3" class="banner">
+          <div class="banner-inner-wrapper header-text">
+            <div class="main-caption">
+              <h2>Unbeatable Travel Deals Await You!</h2>
+              <h1>Deals</h1>
+              <div class="border-button"><a href="deals.html">Go There</a></div>
+            </div>
+            <div class="container">
+              <div class="row">
+                <div class="col-lg-12">
+                  <div class="more-info">
+                    <div class="row">
+                      <div class="col-lg-3 col-sm-6 col-6">
+                        <i class="fa fa-user"></i>
+                        <h4><span>Population:</span><br>169 M</h4>
+                      </div>
+                      <div class="col-lg-3 col-sm-6 col-6">
+                        <i class="fa fa-globe"></i>
+                        <h4><span>Territory:</span><br>56,977 KM<em>2</em></h4>
+                      </div>
+                      <div class="col-lg-3 col-sm-6 col-6">
+                        <i class="fa fa-home"></i>
+                        <h4><span>AVG Price:</span><br>$250.60</h4>
+                      </div>
+                      <div class="col-lg-3 col-sm-6 col-6">
+                        <div class="main-button">
+                          <a href="explore.html">Explore More</a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div id="top-banner-4" class="banner">
+          <div class="banner-inner-wrapper header-text">
+            <div class="main-caption">
+              <h2>Make It Official – Reserve Your Getaway Today!</h2>
+              <h1>Make a Trip</h1>
+              <div class="border-button"><a href="reservation.html">Go There</a></div>
+            </div>
+            <div class="container">
+              <div class="row">
+                <div class="col-lg-12">
+                  <div class="more-info">
+                    <div class="row">
+                      <div class="col-lg-3 col-sm-6 col-6">
+                        <i class="fa fa-user"></i>
+                        <h4><span>Population:</span><br>85 M</h4>
+                      </div>
+                      <div class="col-lg-3 col-sm-6 col-6">
+                        <i class="fa fa-globe"></i>
+                        <h4><span>Territory:</span><br>785350 KM<em>2</em></h4>
+                      </div>
+                      <div class="col-lg-3 col-sm-6 col-6">
+                        <i class="fa fa-home"></i>
+                        <h4><span>AVG Price:</span><br>$65.40.90</h4>
+                      </div>
+                      <div class="col-lg-3 col-sm-6 col-6">
+                        <div class="main-button">
+                          <a href="explore.html">Explore More</a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <nav>
+        <div class="controls">
+          <label for="banner1"><span class="progressbar"><span class="progressbar-fill"></span></span><span class="text">1</span></label>
+          <label for="banner2"><span class="progressbar"><span class="progressbar-fill"></span></span><span class="text">2</span></label>
+          <label for="banner3"><span class="progressbar"><span class="progressbar-fill"></span></span><span class="text">3</span></label>
+          <label for="banner4"><span class="progressbar"><span class="progressbar-fill"></span></span><span class="text">4</span></label>
+        </div>
+      </nav>
+    </div>
+  </section>
+  <!-- ***** Main Banner Area End ***** -->
+  
+  <div class="visit-country">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-5">
+          <div class="section-heading">
+            <h2>Visit One Of Our Countries Now</h2>
+            <p>Discover the world with Usman Travel! At Visit One of Our Countries Now, we offer you the chance to explore some of the most beautiful and culturally rich destinations on the planet. </p>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-lg-8">
+          <div class="items">
+            <div class="row">
+              <div class="col-lg-12">
+                <div class="item">
+                  <div class="row">
+                    <div class="col-lg-4 col-sm-5">
+                      <div class="image">
+                        <img src="assets/images/country-01.jpg" alt="">
+                      </div>
+                    </div>
+                    <div class="col-lg-8 col-sm-7">
+                      <div class="right-content">
+                        <h4>Pakistan</h4>
+                        <span>South Asia</span>
+                        <div class="main-button">
+                          <a href="pakistan.html">Explore More</a>
+                        </div>
+                        <p>Pakistan, a land of breathtaking landscapes and rich cultural heritage, offers a unique blend of history and natural beauty. From the majestic peaks of the Himalayas in the north to the vibrant cities of Lahore and Karachi, Pakistan has something for every traveler. </p>
+                        <ul class="info">
+                          <li><i class="fa fa-user"></i> 240.5 Million People</li>
+                          <li><i class="fa fa-globe"></i> 881,913 km2</li>
+                          <li><i class="fa fa-home"></i> $900.65</li>
+                        </ul>
+                        <div class="text-button">
+                          <a href="googlemaps.html">Need Directions ? <i class="fa fa-arrow-right"></i></a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-12">
+                <div class="item">
+                  <div class="row">
+                    <div class="col-lg-4 col-sm-5">
+                      <div class="image">
+                        <img src="assets/images/country-02.jpg" alt="">
+                      </div>
+                    </div>
+                    <div class="col-lg-8 col-sm-7">
+                      <div class="right-content">
+                        <h4>Iran</h4>
+                        <span>South Asia</span>
+                        <div class="main-button">
+                          <a href="about.html">Explore More</a>
+                        </div>
+                        <p>Iran, a land of ancient history and diverse landscapes, invites travelers to explore its rich cultural heritage and natural wonders. From the bustling streets of Tehran to the stunning architecture of Isfahan and the ancient ruins of Persepolis. </p>
+                        <ul class="info">
+                          <li><i class="fa fa-user"></i> 85.7 Million People</li>
+                          <li><i class="fa fa-globe"></i> 636,372 km2</li>
+                          <li><i class="fa fa-home"></i> $257.96</li>
+                        </ul>
+                        <div class="text-button">
+                          <a href="about.html">Need Directions ? <i class="fa fa-arrow-right"></i></a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-12">
+                <div class="item last-item">
+                  <div class="row">
+                    <div class="col-lg-4 col-sm-5">
+                      <div class="image">
+                        <img src="assets/images/country-03.jpg" alt="">
+                      </div>
+                    </div>
+                    <div class="col-lg-8 col-sm-7">
+                      <div class="right-content">
+                        <h4>Bangladesh</h4>
+                        <span>South Asia</span>
+                        <div class="main-button">
+                          <a href="about.html">Explore More</a>
+                        </div>
+                        <p>Bangladesh, a vibrant country known for its lush landscapes and rich culture, offers an enchanting experience for travelers. From the World’s largest mangrove forest, the Sundarbans, home to the Bengal tiger. </p>
+                        <ul class="info">
+                          <li><i class="fa fa-user"></i> 169 Milion People</li>
+                          <li><i class="fa fa-globe"></i> 56,977 km2</li>
+                          <li><i class="fa fa-home"></i> $250.60</li>
+                        </ul>
+                        <div class="text-button">
+                          <a href="about.html">Need Directions ? <i class="fa fa-arrow-right"></i></a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-12">
+                <ul class="page-numbers">
+                  <li><a href="index.html"><i class="fa fa-arrow-left"></i></a></li>
+                  <li class="active"><a href="#">1</a></li>
+                  <li><a href="countries2.html">2</a></li>
+                  <li><a href="countries3.html">3</a></li>
+                  <li><a href="countries2.html"><i class="fa fa-arrow-right"></i></a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4">
+          <div class="side-bar-map">
+            <div class="row">
+              <div class="col-lg-12">
+                <div id="map">
+                  <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3620.152251836193!2d68.35778021438853!3d25.396927027327472!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x394c70520769faff%3A0x5965ec66adbf4e0b!2sHyderabad%2C%20Sindh%2C%20Pakistan!5e0!3m2!1sen!2sus!4v1699036723664!5m2!1sen!2sus" 
+                        width="125%" 
+                        height="950" 
+                        frameborder="0" 
+                        style="border:0; border-radius: 10px;" 
+                        allowfullscreen="" 
+                        aria-hidden="false" 
+                        tabindex="0">
+                  </iframe> 
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="call-to-action">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8">
+          <h2>Are You Looking To Travel ?</h2>
+          <h4>Make A Reservation By Clicking The Button</h4>
+        </div>
+        <div class="col-lg-4">
+          <div class="border-button">
+            <a href="reservation.html">Book Yours Now</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <footer>
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12">
+          <p>Copyright © 2024 <a href="index.html">Usman Travel</a> Company. All rights reserved. 
+        </div>
+      </div>
+    </div>
+  </footer>
+
+
+  <!-- Scripts -->
+  <!-- Bootstrap core JavaScript -->
+  <script src="vendor/jquery/jquery.min.js"></script>
+  <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
+
+  <script src="assets/js/isotope.min.js"></script>
+  <script src="assets/js/owl-carousel.js"></script>
+  <script src="assets/js/wow.js"></script>
+  <script src="assets/js/tabs.js"></script>
+  <script src="assets/js/popup.js"></script>
+  <script src="assets/js/custom.js"></script>
+
+  <script>
+    function bannerSwitcher() {
+      next = $('.sec-1-input').filter(':checked').next('.sec-1-input');
+      if (next.length) next.prop('checked', true);
+      else $('.sec-1-input').first().prop('checked', true);
+    }
+
+    var bannerTimer = setInterval(bannerSwitcher, 5000);
+
+    $('nav .controls label').click(function() {
+      clearInterval(bannerTimer);
+      bannerTimer = setInterval(bannerSwitcher, 5000)
+    });
+
+    document.querySelector('.dropdown-search').addEventListener('input', function() {
+        let filter = this.value.toLowerCase();
+        document.querySelectorAll('.dropdown-item').forEach(function(item) {
+            item.style.display = item.textContent.toLowerCase().includes(filter) ? 'block' : 'none';
+        });
+    });
+    </script>
+    
+
+  </body>
+
+</html>
