@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us - Usman Travel</title>
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/fontawesome.css">
+    <link rel="stylesheet" href="assets/css/templatemo-woox-travel.css">
+    <link rel="stylesheet" href="assets/css/owl.css">
+    <style>
+
+        /* About Us Styling */
+.about-main-content img {
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.mission-vision h3, .core-values h3, .our-team h3, .testimonials h3 {
+    font-size: 28px;
+    margin-bottom: 20px;
+}
+
+.core-values .icon {
+    font-size: 40px;
+    color: #22b3c1;
+    margin-bottom: 15px;
+}
+
+/* Team Section */
+.our-team img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin-bottom: 15px;
+}
+
+/* Testimonials */
+.testimonials blockquote {
+    font-style: italic;
+    color: #6c757d;
+    border-left: 4px solid #22b3c1;
+    padding-left: 15px;
+    margin-bottom: 15px;
+}
+
+/* Why Choose Us Icons */
+.why-choose-us .icon {
+    font-size: 40px;
+    color: #22b3c1;
+    margin-bottom: 10px;
+}
+
+/* Timeline Section */
+.timeline-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+.timeline-item {
+    text-align: center;
+    background-color: #fff;
+    padding: 15px 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Team Cards with Overlay */
+.team-card {
+    position: relative;
+    margin: 20px;
+    transition: transform 0.3s;
+}
+.team-card:hover {
+    transform: scale(1.05);
+}
+.team-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.7);
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transition: opacity 0.3s;
+    border-radius: 50%;
+}
+.team-card:hover .team-overlay {
+    opacity: 1;
+}
+
+/* Steps in Our Approach */
+.our-approach .steps {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+.our-approach .steps li {
+    font-size: 18px;
+    color: #22b3c1;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+}
+.our-approach .steps li i {
+    margin-right: 10px;
+    font-size: 24px;
+}
+
+/* Hero Section */
+.about-hero {
+    background-size: cover;
+    background-position: center;
+    color: #fff;
+    padding: 100px 0;
+    text-align: center;
+}
+.about-hero h2 {
+    font-size: 48px;
+    margin-bottom: 10px;
+}
+.about-hero p {
+    font-size: 18px;
+    max-width: 600px;
+    margin: auto;
+}
+
+/* Service Cards */
+.our-services .service-card {
+    padding: 20px;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+.our-services .service-card:hover {
+    transform: translateY(-10px);
+}
+.our-services .service-card .icon {
+    font-size: 40px;
+    color: #22b3c1;
+    margin-bottom: 15px;
+}
+.our-services h4 {
+    font-size: 22px;
+    margin-top: 10px;
+    color: #333;
+}
+
+/* Timeline Section */
+.timeline-wrapper {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+.timeline-block {
+    width: 180px;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+.timeline-content h4 {
+    color: #22b3c1;
+    font-size: 20px;
+}
+.timeline-content p {
+    font-size: 14px;
+    color: #555;
+}
+
+    </style>
+</head>
+<body>
+
+    <!-- Header Area -->
+    <header class="header-area header-sticky">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <nav class="main-nav">
+                        <a href="index.html" class="logo">
+                          <h1 style="color: white; margin-top: 10px;">UI Travel</h1>
+                        </a>
+                        <ul class="nav">
+                            <li><a href="index.html">Home</a></li>
+                            <li><a href="about.html" class="active">About</a></li>
+                            <li><a href="deals.html">Deals</a></li>
+                            <li><a href="reservation.html">Reservation</a></li>
+                            <li><a href="contact.html">Contact Us</a></li>
+                        </ul>
+                        <a class='menu-trigger'>
+                            <span>Menu</span>
+                        </a>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="about-hero" style="background-image: url('assets/images/about-content-bg.jpg');">
+        <div class="container text-center">
+            <h2>About Us</h2>
+            <p>Discover what makes Usman Travel your trusted partner for incredible travel experiences around the world.</p>
+        </div>
+    </section>
+
+    <!-- Who We Are Section -->
+    <section class="who-we-are" style="padding: 60px 0;">
+        <div class="container text-center">
+            <h3>Who We Are</h3>
+            <p>Usman Travel is a premium travel agency dedicated to creating memorable journeys. With years of experience and a passion for exploration, we ensure every trip is unique and unforgettable.</p>
+            <img src="assets/images/who-we-are.jpg" alt="Who We Are" class="img-fluid rounded shadow-lg mt-4">
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section class="our-services" style="background-color: #222; padding: 60px 0;">
+        <div class="container">
+            <h3 class="text-center">Our Services</h3>
+            <div class="row text-center">
+                <div class="col-lg-4 col-md-6">
+                    <div class="service-card">
+                        <i class="fas fa-plane-departure icon"></i>
+                        <h4>Flight Bookings</h4>
+                        <p>Find the best deals on flights to any destination, tailored to your preferences.</p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="service-card">
+                        <i class="fas fa-hotel icon"></i>
+                        <h4>Hotel Reservations</h4>
+                        <p>Get exclusive access to premium hotels with top-notch amenities.</p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="service-card">
+                        <i class="fas fa-route icon"></i>
+                        <h4>Customized Tours</h4>
+                        <p>Explore the world with personalized itineraries crafted just for you.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Interactive Timeline Section -->
+    <section class="timeline" style="padding: 60px 0; background-color: #222;">
+        <div class="container text-center">
+            <h3>Our Journey</h3>
+            <p>Since our founding, we've expanded to provide unparalleled travel experiences for clients worldwide.</p>
+            <div class="timeline-wrapper">
+                <div class="timeline-block">
+                    <div class="timeline-content">
+                        <h4>2015</h4>
+                        <p>Usman Travel was founded, focusing on personalized travel experiences.</p>
+                    </div>
+                </div>
+                <div class="timeline-block">
+                    <div class="timeline-content">
+                        <h4>2018</h4>
+                        <p>Expanded to offer international packages and tailored tours.</p>
+                    </div>
+                </div>
+                <div class="timeline-block">
+                    <div class="timeline-content">
+                        <h4>2021</h4>
+                        <p>Launched exclusive concierge services for VIP clients.</p>
+                    </div>
+                </div>
+                <div class="timeline-block">
+                    <div class="timeline-content">
+                        <h4>2023</h4>
+                        <p>Recognized as a top travel agency for exceptional customer service.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container text-center">
+            <p>&copy; 2024 Usman Travel. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
+</body>
+</html>
